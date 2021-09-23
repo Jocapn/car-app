@@ -1,0 +1,18 @@
+<div class="news">
+<h1>Upcoming Toyota Cars</h1>
+    
+   <p> Toyota Kirloskar Motors started its operation in the late 1990s and soon established its strong presence in the Indian automobile market with its reliability and durability factors.
+    
+    The arrival of new technologies and premium features has a lot to do with the enhanced quality of Toyota cars. 
+    
+    Here is a list of upcoming Toyota vehicles with the perfect combination of features and affordability!</p>
+</div>
+    <table mat-table [dataSource]="data" class="mat-elevation-z8">
+  <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+    <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+    <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+</table>

@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+  }
+  
+  button {
+    margin: 16px 8px;
+  }
+
+  h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      color: rgb(4, 23, 51);
+  }
+
+  p{
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .news{
+     margin: 50px 200px; 
+  }

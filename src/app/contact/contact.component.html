@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="content">
+    <div class="left-side">
+      <div class="address details">
+        <div class="topic">Address</div>
+        <div class="text-one">Nikole Pašića 5b 4/24</div>
+        <div class="text-two">Paraćin 35250</div>
+      </div>
+      <div class="phone details">
+        <div class="topic">Phone</div>
+        <div class="text-one">+381 60 3 109 109</div>
+        <div class="text-two">+381 569 363</div>
+      </div>
+      <div class="email details">
+        <div class="topic">Email</div>
+        <div class="text-one">radosavljevic.jovan@gmail.com</div>
+        <div class="text-two">jovan.radosavljevic@tfzr.rs</div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="topic-text">Contact us or send us a message!</div>
+      <p>
+        If you have some requierements or suggestions for us, please feel free
+        to send us your review!
+      </p>
+
+      <mat-card-header>
+        <mat-card-title>
+          <h4>Give us rewiew!</h4>
+        </mat-card-title>
+      </mat-card-header>
+
+      <div class="input-box">
+        <mat-form-field>
+          <input matInput placeholder="Name" ng-model="data.name" type="text" />
+        </mat-form-field>
+      </div>
+      <div class="input-box">
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="E-mail"
+            ng-model="data.email"
+            type="email"
+          />
+        </mat-form-field>
+      </div>
+      <div class="input-box message-box">
+        <mat-form-field>
+          <textarea
+            matInput
+            ng-model="data.description"
+            placeholder="Leave a comment"
+          ></textarea>
+        </mat-form-field>
+      </div>
+      <div class="button">
+        <a mat-raised-button color="primary">Send</a>
+      </div>
+    </div>
+  </div>
+</div>
